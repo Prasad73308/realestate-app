@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RealEstate Pro - Find Your Dream Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-brand">
+          <i class="fas fa-home"></i>
+          <span>RealEstate Pro</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#properties" class="nav-link">Properties</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Find Your Dream Home</h1>
+        <p>
+          Discover the perfect property with our comprehensive real estate
+          platform
+        </p>
+        <div class="search-container">
+          <div class="search-box">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search by location, property type, or price..."
+            />
+            <button id="searchBtn" class="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div class="filter-options">
+            <select id="propertyType">
+              <option value="">All Types</option>
+              <option value="house">House</option>
+              <option value="apartment">Apartment</option>
+              <option value="condo">Condo</option>
+              <option value="townhouse">Townhouse</option>
+            </select>
+            <select id="priceRange">
+              <option value="">Any Price</option>
+              <option value="0-100000">Under $100K</option>
+              <option value="100000-300000">$100K - $300K</option>
+              <option value="300000-500000">$300K - $500K</option>
+              <option value="500000+">$500K+</option>
+            </select>
+            <select id="bedrooms">
+              <option value="">Any Bedrooms</option>
+              <option value="1">1+ Bedrooms</option>
+              <option value="2">2+ Bedrooms</option>
+              <option value="3">3+ Bedrooms</option>
+              <option value="4">4+ Bedrooms</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section id="properties" class="properties">
+      <div class="container">
+        <h2>Featured Properties</h2>
+        <div class="properties-grid" id="propertiesGrid">
+          <!-- Properties will be dynamically loaded here -->
+        </div>
+        <div class="load-more">
+          <button id="loadMoreBtn" class="btn-primary">
+            Load More Properties
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>Why Choose RealEstate Pro?</h2>
+            <p>
+              We're committed to helping you find the perfect home with our
+              advanced search tools, expert agents, and comprehensive property
+              database.
+            </p>
+            <div class="features">
+              <div class="feature">
+                <i class="fas fa-search"></i>
+                <h3>Advanced Search</h3>
+                <p>Find properties with our powerful filtering system</p>
+              </div>
+              <div class="feature">
+                <i class="fas fa-user-tie"></i>
+                <h3>Expert Agents</h3>
+                <p>Work with experienced real estate professionals</p>
+              </div>
+              <div class="feature">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Secure Process</h3>
+                <p>Safe and secure property transactions</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <h3>500+</h3>
+              <p>Properties Listed</p>
+            </div>
+            <div class="stat">
+              <h3>1000+</h3>
+              <p>Happy Clients</p>
+            </div>
+            <div class="stat">
+              <h3>50+</h3>
+              <p>Expert Agents</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Phone</h3>
+                <p>+1 (555) 123-4567</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>info@realestatepro.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Address</h3>
+                <p>123 Real Estate Ave, City, State 12345</p>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <input type="tel" placeholder="Your Phone" />
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>RealEstate Pro</h3>
+            <p>Your trusted partner in finding the perfect home.</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#properties">Properties</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#">Buy a Home</a></li>
+              <li><a href="#">Sell a Home</a></li>
+              <li><a href="#">Rent a Property</a></li>
+              <li><a href="#">Property Management</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> info@realestatepro.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Real Estate Ave</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 RealEstate Pro. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Property Modal -->
+    <div id="propertyModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modalContent">
+          <!-- Modal content will be dynamically loaded here -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
